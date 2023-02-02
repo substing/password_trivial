@@ -37,4 +37,16 @@ def main():
 	print(colored("\n[+] Password is not trivially cracked.\n", 'green'))
 
 
-main()
+try:
+	main()
+except FileNotFoundError:
+	print(colored("[!] Password file not installed.", 'red'))
+	print("The file must be downloaded into this directory.") 
+	print("You can find the download link here:")
+	print(colored("https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt", 'cyan'))
+
+
+
+
+
+

@@ -1,7 +1,6 @@
 #visual libraries
 import pyfiglet
 from termcolor import colored
-from alive_progress import alive_bar
 
 
 def header():
